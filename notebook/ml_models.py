@@ -17,7 +17,7 @@ from sklearn.metrics import (
 
 
 #loading the dataset
-df = pd.read_csv("../dataset/adult.csv")
+df = pd.read_csv("dataset/adult.csv")
 print("Linear Regression")
 print("\n")
 print("First 5 rows of dataset:\n", df.head())
@@ -141,7 +141,7 @@ import seaborn as sns
 
 
 #loading the dataset
-df = pd.read_csv("../dataset/adult.csv")
+df = pd.read_csv("dataset/adult.csv")
 print("Decision Tree")
 print("\n")
 print("First 5 rows of dataset:\n", df.head())
@@ -287,7 +287,7 @@ print("Random Forest")
 print("\n")
 
 #loading dataset
-df = pd.read_csv("../dataset/adult.csv")
+df = pd.read_csv("dataset/adult.csv")
 
 #handling missing values
 df.replace(" ?", np.nan, inplace=True)
@@ -382,7 +382,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 #load dataset (change path if needed)
-df = pd.read_csv("../dataset/adult.csv")  # Adjust the path if your file is in another folder
+df = pd.read_csv("dataset/adult.csv")  # Adjust the path if your file is in another folder
 
 print("K Nearest Neighbor")
 print("\n")
@@ -468,7 +468,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 
 
 #load dataset
-df = pd.read_csv("../dataset/adult.csv")
+df = pd.read_csv("dataset/adult.csv")
 
 print("Support Vector Machine")
 print("\n")
