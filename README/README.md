@@ -262,7 +262,7 @@ Class imbalance affected recall for the high-income class.
 [[856, 712],
  [306, 4634]]
 
-#OVERALL ACCURACY
+# OVERALL ACCURACY
 Linear Regression	 100%
 Decision Tree	     100%
 Random Forest	     82.07%
