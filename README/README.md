@@ -135,6 +135,19 @@ Performance was lower compared to classification-based models.
 
 Highlighted the limitations of regression techniques for classification tasks.
 
+**Regression Metrics:**
+- MAE: 0.0000  
+- MSE: 0.0000  
+- RMSE: 0.0000  
+- R² Score: 1.0000 (100%)
+
+**Classification Metrics:**
+- Accuracy: 100%  
+- Precision: 0.00  
+- Recall: 0.00  
+- F1-Score: 0.00  
+
+
 🔹 Decision Tree
 
 Provided clear interpretability of decision rules.
@@ -142,6 +155,25 @@ Provided clear interpretability of decision rules.
 Prone to overfitting without pruning.
 
 Performance was competitive but slightly less stable than ensemble models.
+
+**Regression Metrics (Training & Test Set):**
+- MAE: 0.0000  
+- MSE: 0.0000  
+- RMSE: 0.0000  
+- R² Score: 1.0000 (100%)
+
+**After Hyperparameter Tuning:**
+- MAE: 0.0000  
+- MSE: 0.0000  
+- RMSE: 0.0000  
+- R² Score: 1.0000 (100%)
+
+**Classification Metrics:**
+- Accuracy: 100%  
+- Precision: 0.00  
+- Recall: 0.00  
+- F1-Score: 0.00  
+
 
 🔹 Random Forest
 
@@ -151,6 +183,26 @@ Reduced overfitting through ensemble learning.
 
 Showed improved precision and recall for both income classes.
 
+
+**Training Set Metrics:**
+- Accuracy: 99.99%
+- Precision: 100%
+- Recall: 99.97%
+- F1-Score: 99.98%
+- Confusion Matrix:
+  [[11976, 0],
+   [1, 3215]]
+
+**Test Set Metrics:**
+- Accuracy: 82.07%
+- Precision: 58.98%
+- Recall: 50.25%
+- F1-Score: 54.27%
+- Confusion Matrix:
+  [[2714, 281],
+  [400, 404]]
+
+
 🔹 K-Nearest Neighbors (KNN)
 
 Achieved reasonable accuracy after feature scaling.
@@ -159,6 +211,28 @@ Sensitive to the choice of k and class imbalance.
 
 Performed well for majority class predictions.
 
+**Accuracy:**
+- Training Accuracy: 87.30%
+- Testing Accuracy: 82.56%
+
+**Classification Metrics (Test Set):**
+- Precision (High): 65.77%
+- Recall (High): 57.59%
+- F1-Score (High): 61.41%
+- Precision (Low): 87.05%
+- Recall (Low): 90.49%
+- F1-Score (Low): 88.73%
+
+**Overall Performance:**
+- Accuracy: 82.56%
+- Macro Avg F1-Score: 75.07%
+- Weighted Avg F1-Score: 82.15%
+
+**Confusion Matrix:**
+[[903, 665],
+ [470, 4470]]
+
+
 🔹 Support Vector Machine (SVM)
 
 Achieved high generalization accuracy (~84%) on test data.
@@ -166,6 +240,35 @@ Achieved high generalization accuracy (~84%) on test data.
 Performed better than KNN due to its ability to handle non-linear data.
 
 Class imbalance affected recall for the high-income class.
+
+**Accuracy:**
+- Training Accuracy: 86.40%
+- Testing Accuracy: 84.36%
+
+**Classification Metrics (Test Set):**
+- Precision (High): 73.67%
+- Recall (High): 54.59%
+- F1-Score (High): 62.71%
+- Precision (Low): 86.68%
+- Recall (Low): 93.81%
+- F1-Score (Low): 90.10%
+
+**Overall Performance:**
+- Accuracy: 84.36%
+- Macro Avg F1-Score: 76.41%
+- Weighted Avg F1-Score: 83.50%
+
+**Confusion Matrix:**
+[[856, 712],
+ [306, 4634]]
+
+#OVERALL ACCURACY
+Linear Regression	 100%
+Decision Tree	     100%
+Random Forest	     82.07%
+KNN	                 82.56%
+SVM	                 84.36%
+
 
 
 CONCLUSION/OBSERVATIONS
@@ -181,3 +284,18 @@ SVM performed better than KNN in terms of overall generalization accuracy.
 Feature scaling and encoding played a crucial role in improving model performance.
 
 Overall, the project successfully demonstrates the application of machine learning techniques for income prediction using real-world census data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
